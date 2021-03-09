@@ -1,4 +1,5 @@
 import 'package:blogger/extended_blog_tabs.dart';
+import 'package:blogger/platform_aware_asset_image.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -54,10 +55,8 @@ class AVHome extends StatelessWidget {
           Colors.grey,
           BlendMode.saturation,
         ),
-        child: Image(
-          image: new AssetImage("img.jpg"),
-          fit: BoxFit.cover,
-        ),
+        child: PlatformAwareAssetImage(
+            asset: "img.jpg", package: null, fit: BoxFit.cover),
       ),
     );
   }
