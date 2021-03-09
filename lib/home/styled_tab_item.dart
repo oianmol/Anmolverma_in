@@ -1,4 +1,4 @@
-import 'package:blogger/inkwell_mouse_region.dart';
+import 'package:blogger/reusable/inkwell_mouse_region.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';

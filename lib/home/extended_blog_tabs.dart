@@ -1,5 +1,5 @@
-import 'package:blogger/av_blogs_directory.dart';
-import 'package:blogger/styled_tab_item.dart';
+import 'package:blogger/blogs/av_blogs_directory.dart';
+import 'package:blogger/home/styled_tab_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
