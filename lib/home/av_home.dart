@@ -50,15 +50,9 @@ class AVHome extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      child: ColorFiltered(
-        colorFilter: ColorFilter.mode(
-          Colors.grey,
-          BlendMode.saturation,
-        ),
-        child: Image(
-          image: new AssetImage(path("img.jpg")),
-          fit: BoxFit.cover,
-        ),
+      child: Image(
+        image: new AssetImage(path("img.jpg")),
+        fit: BoxFit.cover,
       ),
     );
   }
