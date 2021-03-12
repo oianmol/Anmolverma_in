@@ -1,16 +1,16 @@
 import 'package:blogger/blogs/av_blog_listing.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'extensions.dart';
 
-class AVBlogsDirectory extends StatelessWidget {
+class AVBlogsSection extends StatelessWidget {
   static Route<Object> route() {
-    return MaterialPageRoute(builder: (context) => AVBlogsDirectory());
+    return MaterialPageRoute(builder: (context) => AVBlogsSection());
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeeeeee),
       body: blogContainer(context),
     );
   }
@@ -19,16 +19,18 @@ class AVBlogsDirectory extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
-      decoration: BoxDecoration(color: Color(0xff333333)),
+      color: context.isDarkMode() ? Color(0xff333333) : Color(0xffeeeeee),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        children: [nameText(), Expanded(child: BlogListing())],
+        children: [nameText(context), Expanded(child: BlogListing())],
       ),
     );
   }
 
-  Widget nameText() {
+  Widget nameText(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width,
+      decoration: BoxDecoration(color: Color(0xff333333)),
       child: Text(
         "ANMOL VERMA",
         style: GoogleFonts.merriweatherSans(

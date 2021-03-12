@@ -1,4 +1,4 @@
-import 'package:blogger/blogs/av_blogs_directory.dart';
+import 'package:blogger/blogs/av_blogs_section.dart';
 import 'package:blogger/home/styled_tab_item.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -34,7 +34,7 @@ class ExtendedBlogTabs extends StatelessWidget {
   List<Widget> buildTabs(BuildContext context) {
     return [
       styledTabItem("read", "Blog", () {
-        Navigator.of(context).push(AVBlogsDirectory.route());
+        Navigator.of(context).push(AVBlogsSection.route());
       }),
       styledTabItem("watch", "Presentations", () {
       }),
