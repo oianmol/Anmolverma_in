@@ -28,8 +28,8 @@ class _BlogPaginatedListState extends State<BlogPaginatedList> {
       var newItems = <Blog>[];
       for (var index = 0; index < 20; index++) {
         newItems.add(Blog(
-            title: "Random Title $index",
-            description: "Random Long DescriptionRandom Long DescriptionRandom LonRandom Long DescriptionRandom Long DescriptionRandom Long DescriptionRandom Long DescriptionRandom Long Descriptiong DescriptionRandom Long DescriptionRandom Long Description $index",
+            title: "Work in progress! $index",
+            description: "",
             time: DateTime.now().add(Duration(days: index + 1))));
       }
 

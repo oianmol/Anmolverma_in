@@ -32,6 +32,8 @@ dependencies:
   universal_html: ^1.2.4
   url_launcher: ^6.0.2
   infinite_scroll_pagination: ^3.0.1
+  anmolverma_in:
+    git: https://github.com/Anmol92verma/flutter_web_cv
 
 dev_dependencies:
   flutter_test:
