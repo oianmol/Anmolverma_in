@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:universal_html/prefer_sdk/html.dart' as html;
+import "package:universal_html/html.dart" as html;
 
 class InkWellMouseRegion extends InkWell {
   InkWellMouseRegion({

@@ -58,6 +58,6 @@ class AVHome extends StatelessWidget {
   }
 
   String path(str) {
-    return (kIsWeb) ? 'assets/$str' : str;
+    return 'assets/$str';
   }
 }
