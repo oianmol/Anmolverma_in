@@ -27,6 +27,14 @@ class _PresentationsWidgetState extends State<PresentationsWidget> {
     try {
       var newItems = <Presentation>[];
       newItems.add(Presentation(
+          title: "Android Testing Methodology & Evaluation - Google Slides",
+          description: "",
+          time: DateTime.now(),
+          image:
+              "https://lh4.googleusercontent.com/adiTe1_1KstpThpgXU5_SNHVdkQhgedP7DkLqw5b_7XwCBvS-HARlX_z28Gkv9NYdij8qG1AHDkGVw=w1200-h630-p",
+          url:
+              "https://docs.google.com/presentation/d/1B7L_lrmm8_7MmC20CPFlW1Gn4YEd4vsl9meCdeKawjs/edit?usp=sharing"));
+      newItems.add(Presentation(
           title: "gRPC for Kotlin developers - Google Slides",
           description: "",
           time: DateTime.now(),
@@ -63,7 +71,7 @@ class _PresentationsWidgetState extends State<PresentationsWidget> {
           itemBuilder: (context, item, index) => Card(
             margin: EdgeInsets.all(16),
             child: ListTile(
-              onTap: (){
+              onTap: () {
                 launch(item.url);
               },
               leading: Image(
