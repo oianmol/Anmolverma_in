@@ -40,9 +40,6 @@ class ExtendedBlogTabs extends StatelessWidget {
         Navigator.of(context)
             .push(MaterialPageRoute(builder: (context) => ResumeHome()));
       }),
-      styledTabItem("read", "Blog", () {
-        Navigator.of(context).push(AVBlogsSection.route());
-      }),
       styledTabItem("watch", "Presentations", () {
         Navigator.of(context).push(AVPresentationsSection.route());
       }),
@@ -51,7 +48,10 @@ class ExtendedBlogTabs extends StatelessWidget {
       }),
       styledTabItem("mention", "Twitter", () {
         launch("https://twitter.com/_AnmolVerma_");
-      })
+      }),
+      /*styledTabItem("read", "Blog", () {
+        Navigator.of(context).push(AVBlogsSection.route());
+      }),*/
     ];
   }
 

@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:blogger/home/extended_blog_tabs.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -51,7 +53,7 @@ class AVHome extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Image(
-        image: new AssetImage(path("img.jpg")),
+        image: new AssetImage(path("img.webp")),
         fit: BoxFit.cover,
       ),
     );
