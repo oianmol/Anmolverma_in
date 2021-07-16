@@ -33,3 +33,5 @@ flutter:
 
   assets:
     - assets/img.webp
+    - assets/intellij.png
+    - assets/android.png

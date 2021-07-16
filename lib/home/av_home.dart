@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:blogger/home/extended_blog_tabs.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class AVHome extends StatelessWidget {
@@ -19,7 +20,8 @@ class AVHome extends StatelessWidget {
       height: MediaQuery.of(context).size.height,
       decoration: BoxDecoration(color: Color(0xff333333)),
       child: Stack(
-        children: [bgImage(context), homeContainerChild()],
+        alignment: Alignment.bottomCenter,
+        children: [bgImage(context), homeContainerChild(), dockStack()],
       ),
     );
   }
@@ -59,7 +61,52 @@ class AVHome extends StatelessWidget {
     );
   }
 
+  logoImage(image, String name) {
+    return Container(
+      margin: EdgeInsets.only(right: 16),
+      child: Column(children: [
+        Image(
+          image: new AssetImage(path(image)),
+          fit: BoxFit.cover,
+          width: 48,height: 48,
+        ),
+        SizedBox(height: 8,),
+        Text(name,style: TextStyle(color: Colors.white),)
+      ],),
+    );
+  }
+
+  flutterLogo(String name) {
+    return Container(
+      margin: EdgeInsets.only(right: 16),
+      child: Column(children: [
+        FlutterLogo(
+          size: 48
+        ),
+        SizedBox(height: 8,),
+        Text(name,style: TextStyle(color: Colors.white),)
+      ],),
+    );
+  }
+
   String path(str) {
     return 'assets/$str';
+  }
+
+  dockStack() {
+    return Container(
+      padding: EdgeInsets.all(8),
+      margin: EdgeInsets.only(bottom: 4),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.all(Radius.circular(8)),
+          color: Colors.black26),
+      child: Wrap(
+        children: [
+          logoImage("android.png","Android Studio"),
+          logoImage("intellij.png","IntelliJ Idea"),
+          flutterLogo( "Flutter")
+        ],
+      ),
+    );
   }
 }
