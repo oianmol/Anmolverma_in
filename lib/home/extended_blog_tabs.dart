@@ -1,4 +1,5 @@
 import 'package:anmolverma_in/anmolverma_in.dart';
+import 'package:blogger/blogRoutes.dart';
 import 'package:blogger/blogs/av_blogs_section.dart';
 import 'package:blogger/home/av_home.dart';
 import 'package:blogger/home/styled_tab_item.dart';
@@ -6,6 +7,7 @@ import 'package:blogger/presentations/av_presentations_section.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:go_router/go_router.dart';
 
 class ExtendedBlogTabs extends StatelessWidget {
   @override
@@ -37,11 +39,10 @@ class ExtendedBlogTabs extends StatelessWidget {
   List<Widget> buildTabs(BuildContext context) {
     return [
       styledTabItem("about", "Me", () {
-        Navigator.of(context)
-            .push(MaterialPageRoute(builder: (context) => ResumeHome()));
+        context.push(resumeRoute);
       }),
       styledTabItem("watch", "Presentations", () {
-        Navigator.of(context).push(AVPresentationsSection.route());
+        context.push(presentationRoute);
       }),
       styledTabItem("fork", "GitHub", () {
         launch("https://github.com/anmol92verma/");

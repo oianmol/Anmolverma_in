@@ -7,7 +7,7 @@ class CommonSubsectionContainer extends StatelessWidget {
   final String sectionTitle;
   final Widget sectionWidget;
 
-  CommonSubsectionContainer({this.sectionTitle,this.sectionWidget});
+  CommonSubsectionContainer({required this.sectionTitle,required this.sectionWidget});
 
   @override
   Widget build(BuildContext context) {

@@ -5,5 +5,5 @@ class Blog {
   final String description;
   final DateTime time;
 
-  Blog({@required this.title,@required this.description,@required this.time});
+  Blog({required this.title, required this.description, required this.time});
 }

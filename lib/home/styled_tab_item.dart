@@ -9,7 +9,7 @@ class StylesTabItem extends StatefulWidget {
   final String secondary;
   final Function() callback;
 
-  StylesTabItem({this.primary, this.secondary, this.callback});
+  StylesTabItem({required this.primary, required this.secondary, required this.callback});
 
   @override
   _StylesTabItemState createState() => _StylesTabItemState();

@@ -10,8 +10,4 @@ class AVPresentationsSection extends StatelessWidget {
           sectionTitle: "Presentations", sectionWidget: PresentationsWidget()),
     );
   }
-
-  static Route<Object> route() {
-    return MaterialPageRoute(builder: (context) => AVPresentationsSection());
-  }
 }
