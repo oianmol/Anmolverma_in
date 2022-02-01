@@ -38327,7 +38327,7 @@ G(a,b){var s=null
 return A.bh(s,this.agG(),B.k,s,s,s,s,s,s,s,new A.aX(16,24,16,24),s,s,s)},
 agG(){return new A.wA(new A.adU(this),null)}}
 A.adU.prototype={
-$2(a,b){var s=null,r=A.eh(A.a([new A.Hg("Anmol Verma",s),A.di("A result oriented, customer-focused and articulate Engineer. Have worked on multiple projects from concept to completion over the past 8+ years. Skilled in problem solving, cross platform development. Vast experience architecting and building products leveraging the definitive experience and best practices in Android and Flutter development.",s,s,A.nb(B.j,16,B.w,s),s,s),A.bE(s,20,s),new A.Lg(s),A.bE(s,20,s),new A.Jd(b,s)],t.p),B.aO,B.ah,B.L)
+$2(a,b){var s=null,r=A.eh(A.a([new A.Hg("Anmol Verma",s),A.di("A result oriented, customer-focused and articulate Engineer. Have worked on multiple projects from concept to completion over the past 8+ years. Skilled in problem solving, cross platform development. Vast experience architecting and building products leveraging the definitive experience and best practices in Mobile app development development.",s,s,A.nb(B.j,16,B.w,s),s,s),A.bE(s,20,s),new A.Lg(s),A.bE(s,20,s),new A.Jd(b,s)],t.p),B.aO,B.ah,B.L)
 return new A.r2(!0,r,s)},
 $S:308}
 A.Jd.prototype={
