@@ -48,7 +48,7 @@ class ExtendedBlogTabs extends StatelessWidget {
         launch("https://github.com/anmol92verma/");
       }),
       styledTabItem("mention", "Twitter", () {
-        launch("https://twitter.com/_AnmolVerma_");
+        launch("https://twitter.com/oianmol");
       }),
       /*styledTabItem("read", "Blog", () {
         Navigator.of(context).push(AVBlogsSection.route());
