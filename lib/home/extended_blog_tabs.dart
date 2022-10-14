@@ -45,7 +45,7 @@ class ExtendedBlogTabs extends StatelessWidget {
         context.push(presentationRoute);
       }),
       styledTabItem("fork", "GitHub", () {
-        launch("https://github.com/anmol92verma/");
+        launch("https://github.com/oianmol/");
       }),
       styledTabItem("mention", "Twitter", () {
         launch("https://twitter.com/oianmol");
